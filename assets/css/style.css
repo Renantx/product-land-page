@@ -1,0 +1,220 @@
+/* Global */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* Global end */
+
+
+/* Form */
+
+.btn-submit-form {
+    border: 1px solid rgba(0, 83, 70);
+    color: #FFF;
+    background-color: rgba(0, 83, 70, 0.9);
+}
+
+.btn-submit-form:hover {
+    border: 1px solid rgba(0, 83, 70);
+    color: rgba(0, 83, 70);
+    background-color: #FFF;
+}
+
+
+/* Form end */
+
+
+/* Header */
+
+#main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 83, 70, 0.9);
+    color: #FFF;
+    transition: background-color 0.3s, padding 0.3s;
+}
+
+#main-header.scrolled {
+    background-color: rgba(0, 83, 70, 0.9);
+    padding: 10px 0;
+}
+
+.hero-section {
+    margin-top: 80px;
+}
+
+
+/* Header end */
+
+
+/* Carousel */
+
+#carouselExampleIndicators {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/* Carousel end */
+
+
+/* Thumbnails */
+
+.thumb {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+/* Thumbnails end */
+
+
+/* Image Gallery */
+
+.gallery-img {
+    cursor: pointer;
+}
+
+.btn-modal-nav {
+    border: 1px solid rgba(0, 83, 70);
+    color: #FFF;
+    width: 90px;
+    background-color: rgba(0, 83, 70, 0.9);
+}
+
+.btn-modal-nav:hover {
+    border: 1px solid rgba(0, 83, 70);
+    color: rgba(0, 83, 70);
+    background-color: #FFF;
+}
+
+
+/* Image Gallery end */
+
+
+/* Testmonial Slider start */
+
+.slider-wrapper {
+    width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.testimonials-slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    cursor: grab;
+}
+
+.testimonials-slider.grabbing {
+    cursor: grabbing;
+}
+
+.testimonial-item {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+}
+
+.testimonial-item .card {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.slider-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slider-dot.active {
+    background-color: rgba(0, 83, 70);
+}
+
+
+/* Testmonial Slider end */
+
+
+/* Countdown */
+
+.btnEnjoy {
+    background-color: rgba(0, 83, 70);
+    color: #FFF;
+}
+
+.btnEnjoy:hover {
+    border: 1px solid rgba(0, 83, 70);
+    color: rgba(0, 83, 70);
+}
+
+
+/* Countdown end */
+
+
+/* Footer */
+
+.bg-footer {
+    background-color: rgba(0, 83, 70);
+}
+
+
+/* Footer end */
+
+
+/* About section */
+
+.about-section h3,
+.about-section h4 {
+    margin-top: 20px;
+}
+
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.about-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.about-section li {
+    margin-bottom: 10px;
+}
+
+.about-section strong {
+    color: #005346;
+}
+
+
+/* About section end */
+
+
+/* Responsiveness */
+
+@media (max-width: 768px) {
+    #main-header h2 {
+        font-size: 1.5rem;
+    }
+    #carouselExampleIndicators {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .slider-wrapper {
+        width: 100%;
+    }
+}
